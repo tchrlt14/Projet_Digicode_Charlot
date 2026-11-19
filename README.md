@@ -23,6 +23,6 @@ Il s'agit d'un TP contrôle qui résume la base de l'utilisation de QT6 grâce �
 
 1. Ouvrez **Qt Creator**.
 2. Allez dans *Fichier* > *Ouvrir un fichier ou un projet...*
-3. SÃ©lectionnez le fichier `.pro` du projet digicode
+3. Sélectionnez le fichier `.pro` du projet digicode
 4. Choisissez le kit de compilation approprié (Desktop).
 5. Appuyez sur **Ctrl + R** pour compiler et lancer l'application.
