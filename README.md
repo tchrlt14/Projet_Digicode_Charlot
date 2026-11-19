@@ -1,34 +1,17 @@
 #  Tp contôle digicode
 
-Il s'agit d'un TP contrôle qui résume la base de l'utilisation de QT6
+Il s'agit d'un TP contrôle qui résume la base de l'utilisation de QT6 grâce à la construction d'un digicode.
 
-## ðŸ’» Environnement de DÃ©veloppement
+##  Environnement de Développement
 
-*   **SystÃ¨me d'exploitation :** Linux Mint
+*   **Système d'exploitation :** Linux Mint
 *   **IDE :** Qt Creator
-*   **SystÃ¨me de Build :** QMake
+*   **Système de Build :** QMake
 *   **Langage :** C++
 
 ---
 
-## ðŸ“‚ 
-
-*Cette section recense tous les projets rÃ©alisÃ©s, du plus rÃ©cent au plus ancien.*
-
-### ðŸ› ï¸ [Nom du Projet 2] (En cours / TerminÃ©)
-*   **Dossier :** `/DossierProjet2`
-*   **Notions abordÃ©es :** (ex: Programmation OrientÃ©e Objet, Pointeurs intelligents, Signaux et Slots Qt)
-*   **Description :** BrÃ¨ve explication de ce que fait l'application et de son objectif pÃ©dagogique.
-*   **AperÃ§u :** *(Optionnel : Ajoutez une capture d'Ã©cran ici si c'est une interface graphique)*
-
-### ðŸ› ï¸ [Nom du Projet 1] (TerminÃ©)
-*   **Dossier :** `/DossierProjet1`
-*   **Notions abordÃ©es :** (ex: Syntaxe de base du C++, Variables, Boucles, EntrÃ©es/Sorties Console)
-*   **Description :** Premier projet permettant de prendre en main l'IDE Qt Creator et les bases du C++.
-
----
-
-## ðŸ“ˆ Objectifs de Formation
+## Objectifs de l'évaluation
 
 - [ ] MaÃ®triser la syntaxe moderne du C++ (C++11 Ã  C++20).
 - [ ] Comprendre la gestion de la mÃ©moire (Pointeurs, RÃ©fÃ©rences, Smart Pointers).
