@@ -1,6 +1,7 @@
 #  Tp contôle digicode
 
 Il s'agit d'un TP contrôle qui résume la base de l'utilisation de QT6 grâce à la construction d'un digicode.
+Lorque l'on tape le code sur le digicode, si le code est bon alors la porte se déverouille et au bout de 3 seocndes la porte se vérouille.
 
 ##  Environnement de Développement
 
