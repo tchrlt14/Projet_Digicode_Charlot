@@ -16,18 +16,22 @@ Digicode::Digicode(QWidget *parent)
     afficheur->setEchoMode(QLineEdit::Password);
     afficheur->setMinimumHeight(80);
     touches = new QPushButton*[NB_TOUCHES];
+    int nbColonnes = 4;
+    int nbLignes = 3;
     grille->addWidget(afficheur,ligne,colonne,1,3);
     // Création du clavier
-    QString TableDesSymboles[ ] = {"7","8","9","4","5","6",
-                                  "1","2","3","On","0","Ok"};
+    QString TableDesSymboles[4][3] = {{"7","8","9"},{"4","5","6"},
+                                      {"1","2","3"},{"On","0","Ok"}};
     this->setLayout(grille);
-    for (int i = 0; i<NB_TOUCHES;i++){
+    for (int i = 0; i<nbColonnes;i++){
+        for(int j =0;j<nbLignes;j++){
         touches[i]= new QPushButton(this);
-        touches[i]->setText(TableDesSymboles[i]);
+        touches[i]->setText(TableDesSymboles[i][j]);
         touches[i]->setMaximumWidth(80);
         touches[i]->setMaximumHeight(80);
         touches[i]->setStyleSheet("background-color: rgb(128, 128, 128);");
         layout()->addWidget(touches[i]);
+    }
 
 
     }
@@ -35,6 +39,7 @@ Digicode::Digicode(QWidget *parent)
     foreach(QPushButton* button, allButtons) {
     connect(button, &QPushButton::clicked, this, &Digicode::onQPushButtonClicked);
     }
+    connect(&tempoGache,&QTimer::timeout,this,&Digicode::onTimerTempoGache_timeout);
     laPorte = new Porte;
     laPorte->show();
 
@@ -66,6 +71,9 @@ void Digicode::onQPushButtonClicked()
             messageDeverouillage.setText("la porte est dévérouillée");
             messageDeverouillage.exec();
             laPorte->Deverrouiller();
+            tempoGache.setSingleShot(true);
+            tempoGache.start(3000);
+            afficheur->clear();
         }
         else{
             QMessageBox messageFaux;
@@ -80,4 +88,10 @@ void Digicode::onQPushButtonClicked()
     if(touchetexte == "On") {
         afficheur->clear();
     }
+}
+
+void Digicode::onTimerTempoGache_timeout()
+{
+    laPorte->Verrouiller();
+
 }

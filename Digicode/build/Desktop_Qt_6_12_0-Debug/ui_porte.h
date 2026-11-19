@@ -32,7 +32,7 @@ public:
         labelEtat->setGeometry(QRect(140, 230, 151, 61));
         labelImage = new QLabel(Porte);
         labelImage->setObjectName("labelImage");
-        labelImage->setGeometry(QRect(120, 80, 131, 111));
+        labelImage->setGeometry(QRect(120, 10, 131, 191));
 
         retranslateUi(Porte);
 
