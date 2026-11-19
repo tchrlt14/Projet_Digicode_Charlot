@@ -14,6 +14,8 @@ class Porte : public QDialog
 public:
     explicit Porte(QWidget *parent = nullptr);
     ~Porte();
+    void Deverrouiller();
+    void Verrouiller();
 
 private:
     Ui::Porte *ui;

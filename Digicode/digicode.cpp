@@ -35,6 +35,8 @@ Digicode::Digicode(QWidget *parent)
     foreach(QPushButton* button, allButtons) {
     connect(button, &QPushButton::clicked, this, &Digicode::onQPushButtonClicked);
     }
+    laPorte = new Porte;
+    laPorte->show();
 
 }
 
@@ -63,6 +65,7 @@ void Digicode::onQPushButtonClicked()
             QMessageBox messageDeverouillage;
             messageDeverouillage.setText("la porte est dévérouillée");
             messageDeverouillage.exec();
+            laPorte->Deverrouiller();
         }
         else{
             QMessageBox messageFaux;

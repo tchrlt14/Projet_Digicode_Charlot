@@ -7,10 +7,12 @@
 #include <QLineEdit>
 #include <QJSEngine>
 #include <QMessageBox>
+#include "porte.h"
 
 using namespace std;
 QT_BEGIN_NAMESPACE
 namespace Ui {
+class Porte;
 class Digicode;
 }
 QT_END_NAMESPACE
@@ -31,5 +33,6 @@ private:
     QGridLayout *grille;
     QString code;
     QString codeSecret;
+    Porte *laPorte;
 };
 #endif // DIGICODE_H
