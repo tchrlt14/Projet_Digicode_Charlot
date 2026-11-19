@@ -2,7 +2,13 @@
 #define DIGICODE_H
 
 #include <QWidget>
+#include <QGridLayout>
+#include <QPushButton>
+#include <QLineEdit>
+#include <QJSEngine>
+#include <QMessageBox>
 
+using namespace std;
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class Digicode;
@@ -16,8 +22,14 @@ class Digicode : public QWidget
 public:
     explicit Digicode(QWidget *parent = nullptr);
     ~Digicode() override;
-
+    int NB_TOUCHES;
+    void onQPushButtonClicked();
 private:
     Ui::Digicode *ui;
+    QPushButton **touches;
+    QLineEdit *afficheur;
+    QGridLayout *grille;
+    QString code;
+    QString codeSecret;
 };
 #endif // DIGICODE_H

@@ -1,4 +1,4 @@
-QT += widgets
+QT += widgets qml
 
 CONFIG += c++17
 
@@ -8,13 +8,16 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
-    digicode.cpp
+    digicode.cpp \
+    porte.cpp
 
 HEADERS += \
-    digicode.h
+    digicode.h \
+    porte.h
 
 FORMS += \
-    digicode.ui
+    digicode.ui \
+    porte.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
