@@ -1,6 +1,6 @@
-# ðŸš€ Apprentissage du C++ avec Qt Creator
+#  Tp contôle digicode
 
-Bienvenue sur mon dÃ©pÃ´t de suivi d'apprentissage du langage **C++** et du framework **Qt**. Ce dÃ©pÃ´t centralise l'ensemble des projets, exercices et applications que je rÃ©alise au fur et Ã  mesure de ma progression.
+Il s'agit d'un TP contrôle qui résume la base de l'utilisation de QT6
 
 ## ðŸ’» Environnement de DÃ©veloppement
 
