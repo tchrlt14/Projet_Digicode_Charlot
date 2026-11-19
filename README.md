@@ -8,9 +8,9 @@ Il s'agit d'un TP contrôle qui résume la base de l'utilisation de QT6 grâce �
 *   **IDE :** Qt Creator
 *   **Système de Build :** QMake
 *   **Langage :** C++
-## Présentatin du TP 
 
-Il s'agit d'un TP contrôle qui résume la base de l'utilisation de QT6 grâce à la construction d'un digicode.
+
+
 ---
 
 ## Objectifs de l'évaluation
